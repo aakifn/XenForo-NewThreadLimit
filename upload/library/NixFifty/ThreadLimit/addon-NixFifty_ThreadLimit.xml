@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="NixFifty_ThreadLimit" title="NixFifty: New Thread Time Limit" version_string="1.0.0" version_id="1000070" url="https://nixfifty.com/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="load_class" execute_order="10" callback_class="NixFifty_ThreadLimit_Listen" callback_method="loadClass" active="1" hint="XenForo_Model_Forum" description="Listens for the XenForo_Model_Forum class."/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups/>
+  <permissions>
+    <permission_groups/>
+    <permissions>
+      <permission permission_group_id="forum" permission_id="threadLimit" permission_type="integer" default_value_int="0" interface_group_id="forumPermissions" display_order="520"/>
+      <permission permission_group_id="forum" permission_id="threadLimitTime" permission_type="integer" default_value_int="0" interface_group_id="forumPermissions" display_order="521"/>
+    </permissions>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="nf_threadlimit_created_max_possible_threads_in_time_limit" version_id="1000070" version_string="1.0.0"><![CDATA[You have created the maximum number of threads in the alotted time frame. Please wait.]]></phrase>
+    <phrase title="permission_forum_threadLimit" version_id="1000070" version_string="1.0.0"><![CDATA[New thread limit]]></phrase>
+    <phrase title="permission_forum_threadLimitTime" version_id="1000070" version_string="1.0.0"><![CDATA[New thread limit timeframe (in minutes)]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
